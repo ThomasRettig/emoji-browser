@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en" data-dark-mode="false">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Emoji Browser is a minimalistic emoji browser created by Thomas Rettig.">
+		<meta name="author" content="Thomas Rettig">
+		<title>Emoji Browser</title>
+		<!--PWA-->
+		<link rel="icon" type="image/svg+xml" href="images/icon.svg">
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#eee">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2b422b">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!--Stylesheets-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+		<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+		<!--Javascript-->
+		<script src="script.js"></script>
+		<script>
+			document.documentElement.setAttribute("data-dark-mode", localStorage.getItem("dark-mode"));
+		</script>
+		<!--Twitter-->
+		<meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@thomasrettig13">
+        <meta name="twitter:creator" content="@thomasrettig13">
+        <meta name="twitter:title" content="Emoji Browser">
+        <meta name="twitter:description" content="Emoji Browser is a minimalistic emoji browser created by Thomas Rettig.">
+        <!--OpenGraph-->
+        <meta property="og:title" content="Emoji Browser">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Emoji Browser">
+        <meta property="og:description" content="Emoji Browser is a minimalistic emoji browser created by Thomas Rettig.">
+	</head>
+	<body>
+	<main>
+		<nav>
+			<button aria-labelledby="toggle-label" type="button" class="dark-mode-toggle">
+				<span hidden="true" id="toggle-label">toggle dark and light mode</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<circle fill="var(--light)" cx="12" cy="12" r="5">
+					<g stroke="currentColor">
+						<line x1="12" y1="1" x2="12" y2="3">
+						<line x1="12" y1="21" x2="12" y2="23">
+						<line x1="4.22" y1="4.22" x2="5.64" y2="5.64">
+						<line x1="18.36" y1="18.36" x2="19.78" y2="19.78">
+						<line x1="1" y1="12" x2="3" y2="12">
+						<line x1="21" y1="12" x2="23" y2="12">
+						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36">
+						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22">
+					</g>
+				</svg>
+			</button>
+		</nav>
+		<section class="container">
+			<div class="masthead">
+				<div class="masthead-title stix-two-text">
+					<h2 class="type-xl">Emoji Browser</h2>
+				</div>
+				<div class="masthead-meta">
+					<p>A minimalistic emoji browser created by Thomas Rettig. Works best in Firefox.</p>
+				</div>
+			</div>
+		</section>
+
+	<!-- Character Grid -->
+
+		<div class="container">
+			<div class="container-glyphs pb-3u pt-3u stix-two-text">
+		<div class="character-grid ltr">
+				<h3>Emotion</h3>
+
+				<ol class="character-grid-list">
+				
+					<li>😀</li>
+				
+					<li>😁</li>
+				
+					<li>😂</li>
+				
+					<li>🤣</li>
+				
+					<li>😃</li>
+
+					<li>😄</li>
+
+					<li>😅</li>
+				
+					<li>😆</li>
+				
+					<li>😉</li>
+				
+					<li>😊</li>
+				
+					<li>😋</li>
+
+					<li>😎</li>
+
+					<li>🙂</li>
+				
+					<li>😍</li>
+				
+					<li>😘</li>
+				
+					<li>🥰</li>
+				
+					<li>😗</li>
+				
+					<li>😙</li>
+				
+					<li>😚</li>
+				
+					<li style="font-family:Twitter Color Emoji;">☺</li> <!--Prevent Windows from defaulting to Segoe UI Symbols-->
+				
+					<li>🤩</li>
+				
+					<li>🤗</li>
+				
+					<li>🤔</li>
+				
+					<li>🤨</li>
+				
+					<li>😐</li>
+				
+					<li>😑</li>
+				
+					<li>😶</li>
+				
+					<li>🙄</li>
+				
+					<li>😏</li>
+				
+					<li>😣</li>
+				
+					<li>😥</li>
+				
+					<li>😮</li>
+				
+					<li>🤐</li>
+				
+					<li>😯</li>
+				
+					<li>😪</li>
+				
+					<li>😫</li>
+				
+					<li>🥱</li>
+				
+					<li>😴</li>
+				
+					<li>😌</li>
+				
+					<li>😛</li>
+				
+					<li>😜</li>
+				
+					<li>😝</li>
+				
+					<li>🤤</li>
+				
+					<li>😒</li>
+				
+					<li>😓</li>
+				
+					<li>😔</li>
+				
+					<li>😕</li>
+				
+					<li>🙃</li>
+				
+					<li>🤑</li>
+				
+					<li>😲</li>
+				
+					<li>☹</li>
+				
+					<li>🙁</li>
+				
+					<li>😖</li>
+				
+					<li>😞</li>
+				
+					<li>😟</li>
+				
+					<li>😤</li>
+				
+					<li>😢</li>
+				
+					<li>😭</li>
+				
+					<li>😦</li>
+				
+					<li>😧</li>
+				
+					<li>😨</li>
+				
+					<li>😩</li>
+
+					<li>🤯</li>
+				
+					<li>😬</li>
+				
+					<li>😰</li>
+				
+					<li>😱</li>
+
+					<li>🥵</li>
+
+					<li>🥶</li>
+				
+					<li>😳</li>
+				
+					<li>🤪</li>
+				
+					<li>😵</li>
+
+					<li>🥴</li>
+				
+					<li>😠</li>
+
+					<li>😡</li>
+
+					<li>🤬</li>
+				
+					<li>😷</li>
+				
+					<li>🤒</li>
+				
+					<li>🤕</li>
+
+					<li>🤢</li>
+				
+					<li>🤮</li>
+
+					<li>🤧</li>
+
+					<li>😇</li>
+				
+					<li>🥳</li>
+				
+					<li>🥺</li>
+				
+					<li>🤠</li>
+
+					<li>🤡</li>
+
+					<li>🤥</li>
+
+					<li>🤫</li>
+
+					<li>🤭</li>
+
+					<li>🧐</li>
+
+					<li>🤓</li>
+
+					<li>😈</li>
+
+					<li>👿</li>
+
+					<li>👹</li>
+
+					<li>👺</li>
+
+					<li>💩</li>
+
+					<li>👻</li>
+
+					<li>💀</li>
+
+					<li>☠️</li>
+
+					<li>👽</li>
+
+					<li>👾</li>
+
+					<li>🤖</li>
+
+					<li>🎃</li>
+
+					<li>😺</li>
+
+					<li>😸</li>
+
+					<li>😹</li>
+
+					<li>😻</li>
+
+					<li>😼</li>
+
+					<li>😽</li>
+
+					<li>🙀</li>
+
+					<li>😿</li>
+
+					<li>😾</li>
+				
+				</ol>
+			
+				
+				<h3>Gestures and body parts</h3>
+
+				<ol class="character-grid-list">
+				
+					<li>👋</li>
+					<li>🤚</li>
+					<li>🖐</li>
+					<li>✋</li>
+					<li>🖖</li>
+					<li>👌</li>
+					<li>🤌</li>
+					<li>🤏</li>
+					<li>✌️</li>
+					<li>🤞</li>
+					<li>🤟</li>
+					<li>🤘</li>
+					<li>🤙</li>
+					<li>👈</li>
+					<li>👉</li>
+					<li>👆</li>
+					<li>🖕</li>
+					<li>👇</li>
+					<li>☝️</li>
+					<li>👍</li>
+					<li>👎</li>
+					<li>✊</li>
+					<li>👊</li>
+					<li>🤛</li>
+					<li>🤜</li>
+					<li>👏</li>
+					<li>🙌</li>
+					<li>👐</li>
+					<li>🤲</li>
+					<li>🤝</li>
+					<li>🙏</li>
+					<li>✍️</li>
+					<li>💅</li>
+					<li>🤳</li>
+					<li>💪</li>
+					<li>🦾</li>
+					<li>🦵</li>
+					<li>🦿</li>
+					<li>🦶</li>
+					<li>👣</li>
+					<li>👂</li>
+					<li>🦻</li>
+					<li>👃</li>
+					<li>🫀</li> <!--human heart-->
+					<li>🫁</li> <!--human lung-->
+					<li>🧠</li>
+					<li>🦷</li>
+					<li>🦴</li>
+					<li>👀</li>
+					<li>👁</li>
+					<li>👅</li>
+					<li>👄</li>
+					<li>💋</li>
+					<li>🩸</li>
+
+				</ol>
+			
+				
+				<h3>People</h3>
+				<ol class="character-grid-list">
+				
+					<li>👩</li>
+				
+					<li>👨</li>
+				
+					<li>🧑</li>
+				
+					<li>👧</li>
+				
+					<li>👦</li>
+				
+					<li>🧒</li>
+				
+					<li>👶</li>
+				
+					<li>👵</li>
+				
+					<li>👴</li>
+				
+					<li>🧓</li>
+				
+					<li>👩‍🦰</li>
+				
+					<li>👨‍🦰</li>
+				
+					<li>👩‍🦱</li>
+				
+					<li>👨‍🦱</li>
+				
+					<li>👩‍🦲</li>
+				
+					<li>👨‍🦲</li>
+				
+					<li>👩‍🦳</li>
+				
+					<li>👨‍🦳</li>
+				
+					<li>👱‍</li>
+				
+					<li>👸</li>
+				
+					<li>🤴</li>
+
+					<li>👳‍</li>
+				
+					<li>👲</li>
+				
+					<li>🧔</li>
+				
+					<li>👼</li>
+				
+					<li>🤶</li>
+				
+					<li>🎅</li>
+				
+					<li>👮‍♀️</li>
+
+					<li>👮‍♂️</li>
+				
+					<li>🕵️‍♀️</li>
+
+					<li>🕵️‍♂️</li>
+				
+					<li>💂‍♀️</li>
+				
+					<li>💂‍♂️</li>
+				
+					<li>👷‍♀️</li>
+				
+					<li>👷‍♂️</li>
+				
+					<li>👩‍⚕️</li>
+				
+					<li>👨‍⚕️</li>
+
+					<li>👩‍🎓</li>
+
+					<li>👨‍🎓</li>
+				
+					<li>👩‍🏫</li>
+				
+					<li>👨‍🏫</li>
+				
+					<li>👩‍⚖️</li>
+				
+					<li>👨‍⚖️</li>
+				
+					<li>👩‍🌾</li>
+				
+					<li>👨‍🌾</li>
+
+					<li>👩‍🍳</li>
+				
+					<li>👨‍🍳</li>
+
+					<li>👩‍🔧</li>
+
+					<li>👨‍🔧</li>
+				
+					<li>👩‍🏭</li>
+				
+					<li>👨‍🏭</li>
+				
+					<li>👩‍💼</li>
+				
+					<li>👨‍💼</li>
+				
+					<li>👩‍🔬</li>
+				
+					<li>👨‍🔬</li>
+
+					<li>👩‍💻</li>
+				
+					<li>👨‍💻</li>
+				
+					<li>👩‍🎤</li>
+				
+					<li>👨‍🎤</li>
+				
+					<li>👩‍🎨</li>
+				
+					<li>👨‍🎨</li>
+
+					<li>👩‍✈️</li>
+
+					<li>👨‍✈️</li>
+				
+					<li>👩‍🚀</li>
+
+					<li>👨‍🚀</li>
+
+					<li>👩‍🚒</li>
+				
+					<li>👨‍🚒</li>
+
+					<li>🧕</li>
+
+					<li>👰</li>
+				
+					<li>🤵</li>
+
+					<li>🤱</li>
+
+					<li>🤰</li>
+				
+					<li>🦸‍♀️</li>
+
+					<li>🦸‍♂️</li>
+
+					<li>🦹‍♀️</li>
+				
+					<li>🦹‍♂️</li>
+
+					<li>🧙‍♀️</li>
+
+					<li>🧚‍♀️</li>
+				
+					<li>🧚‍♂️</li>
+
+					<li>🧛‍♀️</li>
+
+					<li>🧛‍♂️</li>
+				
+					<li>🧜‍♀️</li>
+
+					<li>🧜‍♂️</li>
+
+					<li>🧝‍♀️</li>
+				
+					<li>🧝‍♂️</li>
+
+					<li>🧟‍♀️</li>
+
+					<li>🧟‍♂️</li>
+				
+					<li>🙍‍♀️</li>
+
+					<li>🙍‍♂️</li>
+
+					<li>🙎‍♀️</li>
+				
+					<li>🙎‍♂️</li>
+
+					<li>🙅‍♀️</li>
+
+					<li>🙅‍♂️</li>
+				
+					<li>🙆‍♀️</li>
+
+					<li>🙆‍♂️</li>
+
+					<li>🧏‍♀️</li>
+				
+					<li>🧏‍♂️</li>
+
+					<li>💁‍♀️</li>
+
+					<li>💁‍♂️</li>
+				
+					<li>🙋‍♀️</li>
+
+					<li>🙋‍♂️</li>
+
+					<li>🙇‍♀️</li>
+				
+					<li>🙇‍♂️</li>
+
+					<li>🤦‍♀️</li>
+
+					<li>🤦‍♂️</li>
+				
+					<li>🤷‍♀️</li>
+
+					<li>🤷‍♂️</li>
+
+					<li>💆‍♀️</li>
+				
+					<li>💆‍♂️</li>
+
+					<li>💇‍♀️</li>
+
+					<li>💇‍♂️</li>
+				
+					<li>🧖‍♀️</li>
+
+					<li>🧖‍♂️</li>
+
+					<li>🤹‍♀️</li>
+				
+					<li>🤹‍♂️</li>
+
+					<li>👩‍🦽</li>
+
+					<li>👨‍🦽</li>
+				
+					<li>👩‍🦼</li>
+
+					<li>👨‍🦼</li>
+
+					<li>👩‍🦯</li>
+				
+					<li>👨‍🦯</li>
+
+					<li>🧎‍♀️</li>
+
+					<li>🧎‍♂️</li>
+				
+					<li>🧍‍♀️</li>
+
+					<li>🧍‍♂️</li>
+
+					<li>🚶‍♀️</li>
+				
+					<li>🚶‍♂️</li>
+
+				</ol>
+
+				<h3>Outdoor activities</h3>
+				<ol class="character-grid-list">
+
+					<li>🏃‍♀️</li>
+
+					<li>🏃‍♂️</li>
+				
+					<li>💃</li>
+
+					<li>🕺</li>
+
+					<li>🧗‍♀️</li>
+				
+					<li>🧗‍♂️</li>
+
+					<li>🧘‍♀️</li>
+
+					<li>🧘‍♂️</li>
+				
+					<li>🛀</li>
+
+					<li>🛌</li>
+
+					<li>🕴</li>
+				
+					<li>🏇</li>
+
+					<li>🏂</li>
+
+					<li>🏌️‍♀️</li>
+				
+					<li>🏌️‍♂️</li>
+
+					<li>🏄‍♀️</li>
+
+					<li>🏄‍♂️</li>
+				
+					<li>🚣‍♀️</li>
+
+					<li>🚣‍♂️</li>
+
+					<li>🏊‍♀️</li>
+				
+					<li>🏊‍♂️</li>
+
+					<li>🤽‍♀️</li>
+
+					<li>🤽‍♂️</li>
+				
+					<li>🤾‍♀️</li>
+
+					<li>🤾‍♂️</li>
+
+					<li>⛹️‍♀️</li>
+
+					<li>⛹️‍♂️</li>
+
+					<li>🏋️‍♀️</li>
+
+					<li>🚴‍♀️</li>
+
+					<li>🚴‍♂️</li>
+					
+					<li>🚵‍♀️</li>
+
+					<li>🚵‍♂️</li>
+
+					<li>🤸‍♀️</li>
+					
+					<li>🤸‍♂️</li>
+
+				</ol>
+
+				<h3>Food and drink</h3>
+				<ol class="character-grid-list">
+				
+					<li>🍕</li>
+				
+					<li>🍔</li>
+				
+					<li>🍟</li>
+				
+					<li>🌭</li>
+				
+					<li>🍿</li>
+
+					<li>🧂</li>
+
+					<li>🥓</li>
+					
+					<li>🥚</li>
+
+					<li>🍳</li>
+
+					<li>🧇</li>
+					
+					<li>🥞</li>
+
+					<li>🧈</li>
+
+					<li>🍞</li>
+					
+					<li>🥐</li>
+
+					<li>🥨</li>
+
+					<li>🥯</li>
+					
+					<li>🥖</li>
+
+					<li>🧀</li>
+
+					<li>🥗</li>
+					
+					<li>🥙</li>
+
+					<li>🥪</li>
+
+					<li>🌮</li>
+					
+					<li>🌯</li>
+
+					<li>🥫</li>
+
+					<li>🍖</li>
+					
+					<li>🍗</li>
+
+					<li>🥩</li>
+
+					<li>🍠</li>
+
+					<li>🥟</li>
+
+					<li>🥠</li>
+
+					<li>🥡</li>
+
+					<li>🍱</li>
+
+					<li>🍘</li>
+
+					<li>🍙</li>
+
+					<li>🍚</li>
+
+					<li>🍛</li>
+
+					<li>🍜</li>
+
+					<li>🦪</li>
+
+					<li>🍣</li>
+
+					<li>🍤</li>
+
+					<li>🍥</li>
+
+					<li>🥮</li>
+
+					<li>🍢</li>
+
+					<li>🧆</li>
+
+					<li>🥘</li>
+
+					<li>🍲</li>
+
+					<li>🍝</li>
+
+					<li>🥣</li>
+
+					<li>🥧</li>
+
+					<li>🍦</li>
+
+					<li>🍧</li>
+
+					<li>🍨</li>
+
+					<li>🍩</li>
+
+					<li>🍪</li>
+
+					<li>🎂</li>
+
+					<li>🍰</li>
+
+					<li>🧁</li>
+
+					<li>🍫</li>
+
+					<li>🍬</li>
+
+					<li>🍭</li>
+
+					<li>🍡</li>
+
+					<li>🍮</li>
+
+					<li>🍯</li>
+
+					<li>🍼</li>
+
+					<li>🥛</li>
+
+					<li>🧃</li>
+
+					<li>☕</li>
+
+					<li>🍵</li>
+
+					<li>🧉</li>
+
+					<li>🍶</li>
+
+					<li>🍾</li>
+
+					<li>🍷</li>
+
+					<li>🍸</li>
+
+					<li>🍹</li>
+
+					<li>🍺</li>
+
+					<li>🍻</li>
+
+					<li>🥂</li>
+
+					<li>🥃</li>
+
+					<li>🧊</li>
+
+					<li>🥤</li>
+
+					<li>🥢</li>
+
+					<li>🍽</li>
+
+					<li>🍴</li>
+
+					<li>🥄</li>
+
+					<li>🏺</li>
+
+					<li>🥝</li>
+
+					<li>🥥</li>
+
+					<li>🍇</li>
+
+					<li>🍈</li>
+
+					<li>🍉</li>
+
+					<li>🍊</li>
+
+					<li>🍋</li>
+
+					<li>🍌</li>
+
+					<li>🍍</li>
+
+					<li>🥭</li>
+
+					<li>🍎</li>
+
+					<li>🍏</li>
+
+					<li>🍐</li>
+
+					<li>🍑</li>
+
+					<li>🍒</li>
+
+					<li>🍓</li>
+
+					<li>🍅</li>
+
+					<li>🍆</li>
+
+					<li>🌽</li>
+
+					<li>🌶</li>
+
+					<li>🍄</li>
+
+					<li>🥑</li>
+
+					<li>🥒</li>
+
+					<li>🥬</li>
+
+					<li>🥦</li>
+
+					<li>🥔</li>
+
+					<li>🧄</li>
+
+					<li>🧅</li>
+
+					<li>🥕</li>
+
+					<li>🌰</li>
+
+					<li>🥜</li>
+				
+				</ol>
+			
+				
+				<h3>Travel and Geography</h3>
+				<ol class="character-grid-list">
+				
+					<li>🚗</li>
+				
+					<li>🚓</li>
+				
+					<li>🚕</li>
+				
+					<li>🛺</li>
+				
+					<li>🚙</li>
+				
+					<li>🚌</li>
+				
+					<li>🚐</li>
+				
+					<li>🚎</li>
+				
+					<li>🚑</li>
+				
+					<li>🚒</li>
+				
+					<li>🚚</li>
+				
+					<li>🚛</li>
+				
+					<li>🚜</li>
+				
+					<li>🚘</li>
+				
+					<li>🚔</li>
+				
+					<li>🚖</li>
+				
+					<li>🚍</li>
+				
+					<li>🦽</li>
+				
+					<li>🦼</li>
+				
+					<li>🛹</li>
+				
+					<li>🚲</li>
+				
+					<li>🛴</li>
+				
+					<li>🛵</li>
+				
+					<li>🏍</li>
+				
+					<li>🏎</li>
+				
+					<li>🚄</li>
+				
+					<li>🚅</li>
+				
+					<li>🚈</li>
+				
+					<li>🚝</li>
+				
+					<li>🚞</li>
+				
+					<li>🚃</li>
+				
+					<li>🚋</li>
+				
+					<li>🚆</li>
+				
+					<li>🚉</li>
+				
+					<li>🚊</li>
+			
+					<li>🚇</li>
+				
+					<li>🚟</li>
+				
+					<li>🚠</li>
+				
+					<li>🚡</li>
+				
+					<li>🚂</li>
+				
+					<li>🛩</li>
+				
+					<li>🪂</li>
+				
+					<li>✈</li>
+				
+					<li>🛫</li>
+				
+					<li>🛬</li>
+				
+					<li>💺</li>
+				
+					<li>🚁</li>
+				
+					<li>🚀</li>
+				
+					<li>🛸</li>
+				
+					<li>🛰</li>
+				
+					<li>⛵</li>
+				
+					<li>🚤</li>
+				
+					<li>🛥</li>
+				
+					<li>⛴</li>
+				
+					<li>🛳</li>
+				
+					<li>🚢</li>
+				
+					<li>⚓</li>
+				
+					<li>🚏</li>
+				
+					<li>⛽</li>
+				
+					<li>🚨</li>
+				
+					<li>🚥</li>
+				
+					<li>🚦</li>
+				
+					<li>🚧</li>
+				
+					<li>🏁</li>
+				
+					<li>🏳‍🌈</li>
+				
+					<li>🏳</li>
+				
+					<li>🏴</li>
+				
+					<li>🏴‍☠️</li>
+				
+					<li>🚩</li>
+				
+					<li>🌌</li>
+				
+					<li>🪐</li>
+				
+					<li>🌍</li>
+				
+					<li>🌎</li>
+				
+					<li>🌏</li>
+				
+					<li>🗺</li>
+				
+					<li>🧭</li>
+				
+					<li>🏔</li>
+				
+					<li>⛰</li>
+				
+					<li>🌋</li>
+				
+					<li>🗻</li>
+				
+					<li>🛤</li>
+				
+					<li>🏕</li>
+				
+					<li>🏞</li>
+				
+					<li>🛣</li>
+				
+					<li>🏖</li>
+				
+					<li>🏜</li>
+				
+					<li>🏝</li>
+				
+					<li>🏟</li>
+				
+					<li>🏛</li>
+				
+					<li>🏗</li>
+				
+					<li>🏘</li>
+				
+					<li>🏙</li>
+				
+					<li>🏚</li>
+				
+					<li>🏠</li>
+				
+					<li>🏡</li>
+				
+					<li>⛪</li>
+				
+					<li>🕋</li>
+				
+					<li>🕌</li>
+				
+					<li>🛕</li>
+				
+					<li>🕍</li>
+				
+					<li>⛩</li>
+				
+					<li>🏢</li>
+				
+					<li>🏣</li>
+				
+					<li>🏤</li>
+				
+					<li>🏥</li>
+				
+					<li>🏦</li>
+				
+					<li>🏨</li>
+				
+					<li>🏩</li>
+				
+					<li>🏪</li>
+				
+					<li>🏫</li>
+				
+					<li>🏬</li>
+				
+					<li>🏭</li>
+				
+					<li>🏯</li>
+				
+					<li>🏰</li>
+				
+					<li>💒</li>
+				
+					<li>🗼</li>
+				
+					<li>🌉</li>
+				
+					<li>🗽</li>
+				
+					<li>🗾</li>
+				
+					<li>🎌</li>
+				
+					<li>⛲</li>
+				
+					<li>⛺</li>
+				
+					<li>🌁</li>
+				
+					<li>🌃</li>
+				
+					<li>🌄</li>
+				
+					<li>🌅</li>
+				
+					<li>🌆</li>
+				
+					<li>🌇</li>
+				
+					<li>♨</li>
+				
+					<li>💈</li>
+				
+					<li>🛎</li>
+				
+					<li>🧳</li>
+				
+					<li>🪑</li>
+				
+					<li>🚪</li>
+				
+					<li>🛏</li>
+				
+					<li>🛋</li>
+				
+					<li>🚽</li>
+				
+					<li>🧻</li>
+				
+					<li>🚿</li>
+				
+					<li>🛁</li>
+				
+					<li>🧼</li>
+				
+					<li>🧽</li>
+				
+					<li>🧴</li>
+				
+					<li>🪒</li>
+				
+					<li>🧷</li>
+				
+					<li>🧹</li>
+				
+					<li>🧺</li>
+				
+					<li>🧯</li>
+
+				</ol>
+
+				<h3>Weather and astrology</h3>
+				<ol class="character-grid-list">
+				
+					<li>☁</li>
+				
+					<li>⛅</li>
+				
+					<li>⛈</li>
+				
+					<li>🌤</li>
+				
+					<li>🌥</li>
+				
+					<li>🌦</li>
+				
+					<li>🌧</li>
+				
+					<li>🌨</li>
+				
+					<li>🌩</li>
+				
+					<li>🌪</li>
+				
+					<li>🌫</li>
+				
+					<li>🌝</li>
+				
+					<li>🌑</li>
+				
+					<li>🌒</li>
+				
+					<li>🌓</li>
+				
+					<li>🌔</li>
+				
+					<li>🌕</li>
+				
+					<li>🌖</li>
+				
+					<li>🌗</li>
+				
+					<li>🌘</li>
+				
+					<li>🌙</li>
+				
+					<li>🌚</li>
+				
+					<li>🌛</li>
+				
+					<li>🌜</li>
+				
+					<li style="font-family: Twitter Color Emoji;">☀</li>
+				
+					<li>🌞</li>
+				
+					<li>⭐</li>
+				
+					<li>🌟</li>
+				
+					<li>🌠</li>
+				
+					<li>☄</li>
+				
+					<li>🌡</li>
+				
+					<li>🌬</li>
+				
+					<li>🌀</li>
+				
+					<li>🌈</li>
+				
+					<li>🌂</li>
+				
+					<li>☂</li>
+				
+					<li>☔</li>
+				
+					<li>⛱</li>
+				
+					<li>⚡</li>
+				
+					<li>❄</li>
+				
+					<li>☃</li>
+				
+					<li>⛄</li>
+				
+					<li>🔥</li>
+				
+					<li>💧</li>
+				
+					<li>🌊</li>
+
+				</ol>
+			
+				
+				<h3>Education, work and finance</h3>
+				<ol class="character-grid-list">
+				
+					<li>📔</li>
+				
+					<li>📕</li>
+				
+					<li>📖</li>
+				
+					<li>📗</li>
+				
+					<li>📘</li>
+				
+					<li>📙</li>
+				
+					<li>📚</li>
+				
+					<li>📓</li>
+				
+					<li>📒</li>
+				
+					<li>📃</li>
+				
+					<li>📜</li>
+				
+					<li>📄</li>
+				
+					<li>📑</li>
+				
+					<li>📰</li>
+				
+					<li>🗞</li>
+				
+					<li>🔖</li>
+				
+					<li>💰</li>
+			
+					<li>💴</li>
+				
+					<li>💵</li>
+				
+					<li>💶</li>
+				
+					<li>💷</li>
+				
+					<li>💸</li>
+				
+					<li>💳</li>
+				
+					<li>🧾</li>
+				
+					<li>🏧</li>
+				
+					<li>✉</li>
+				
+					<li>📧</li>
+				
+					<li>📨</li>
+				
+					<li>📩</li>
+				
+					<li>📤</li>
+				
+					<li>📥</li>
+				
+					<li>📦</li>
+				
+					<li>📫</li>
+				
+					<li>📪</li>
+				
+					<li>📬</li>
+				
+					<li>📭</li>
+				
+					<li>📮</li>
+				
+					<li>🗳</li>
+				
+					<li>✏</li>
+				
+					<li>✒</li>
+				
+					<li>🖋</li>
+				
+					<li>🖊</li>
+				
+					<li>🖌</li>
+				
+					<li>🖍</li>
+				
+					<li>📝</li>
+				
+					<li>🗒</li>
+				
+					<li>💼</li>
+				
+					<li>📁</li>
+
+					<li>📂</li>
+
+					<li>🗂</li>
+
+					<li>📅</li>
+
+					<li>📆</li>
+
+					<li>🗓</li>
+
+					<li>📇</li>
+
+					<li>📈</li>
+
+					<li>📉</li>
+
+					<li>📊</li>
+
+					<li>📋</li>
+
+					<li>📌</li>
+
+					<li>📍</li>
+
+					<li>📎</li>
+
+					<li>🖇</li>
+
+					<li>📏</li>
+
+					<li>📐</li>
+
+					<li>✂</li>
+
+					<li>🗃</li>
+
+					<li>🗄</li>
+
+					<li>🗑</li>
+
+					<li>⌛</li>
+
+					<li>⏳</li>
+
+					<li>⌚</li>
+
+					<li>⏰</li>
+
+					<li>⏱</li>
+
+					<li>⏲</li>
+
+					<li>🕰</li>
+				
+				</ol>
+			
+				
+				<h3>Hearts</h3>
+				<ol class="character-grid-list">
+				
+					<li>❤</li>
+				
+					<li>🧡</li>
+				
+					<li>💛</li>
+				
+					<li>💚</li>
+				
+					<li>💙</li>
+				
+					<li>💜</li>
+				
+					<li>🤎</li>
+				
+					<li>🖤</li>
+				
+					<li>🤍</li>
+				
+					<li>💔</li>
+				
+					<li>❣</li>
+				
+					<li>💕</li>
+				
+					<li>💞</li>
+				
+					<li>💓</li>
+				
+					<li>💗</li>
+				
+					<li>💖</li>
+				
+					<li>💘</li>
+				
+					<li>💝</li>
+				
+					<li>💟</li>
+				
+					<li>💌</li>
+
+				</ol>
+
+				<h3>Symbols</h3>
+				<ol class="character-grid-list">
+				
+					<li>💢</li>
+				
+					<li>💥</li>
+				
+					<li>💤</li>
+				
+					<li>💦</li>
+				
+					<li>💨</li>
+				
+					<li>💫</li>
+				
+					<li>🕳</li>
+				
+					<li>☮</li>
+				
+					<li>✝</li>
+				
+					<li>☪</li>
+				
+					<li>🕉</li>
+				
+					<li>☸</li>
+				
+					<li>✡</li>
+				
+					<li>🔯</li>
+				
+					<li>🕎</li>
+				
+					<li>☯</li>
+				
+					<li>☦</li>
+				
+					<li>🛐</li>
+				
+					<li>⛎</li>
+				
+					<li>♈</li>
+				
+					<li>♉</li>
+				
+					<li>♊</li>
+				
+					<li>♋</li>
+				
+					<li>♌</li>
+				
+					<li>♍</li>
+				
+					<li>♎</li>
+				
+					<li>♏</li>
+				
+					<li>♐</li>
+				
+					<li>♑</li>
+				
+					<li>♒</li>
+				
+					<li>♓</li>
+				
+					<li>🆔</li>
+				
+					<li>⚕</li>
+
+					<li>♾</li>
+
+					<li>⚛</li>
+
+					<li>🈳</li>
+
+					<li>🈹</li>
+
+					<li>🈶</li>
+
+					<li>🈚</li>
+
+					<li>🈸</li>
+
+					<li>🈺</li>
+
+					<li>🈷</li>
+
+					<li>✴</li>
+
+					<li>🆚</li>
+
+					<li>🉑</li>
+
+					<li>💮</li>
+
+					<li>🉐</li>
+
+					<li>㊙</li>
+
+					<li>㊗</li>
+
+					<li>🈴</li>
+
+					<li>🈵</li>
+
+					<li>🈲</li>
+
+					<li>🚼</li>
+
+					<li>🅰</li>
+
+					<li>🅱</li>
+
+					<li>🆎</li>
+
+					<li>🆑</li>
+
+					<li>🅾</li>
+
+					<li>🆘</li>
+
+					<li>⛔</li>
+
+					<li>🛑</li>
+
+					<li>📛</li>
+
+					<li>❌</li>
+
+					<li>⭕</li>
+
+					<li>🚫</li>
+
+					<li>🔇</li>
+
+					<li>🔕</li>
+
+					<li>🚭</li>
+
+					<li>🚷</li>
+
+					<li>🚯</li>
+
+					<li>🚳</li>
+
+					<li>🚱</li>
+
+					<li>🔞</li>
+
+					<li>📵</li>
+
+					<li>❗</li>
+
+					<li>❕</li>
+
+					<li>❓</li>
+
+					<li>❔</li>
+
+					<li>‼</li>
+
+					<li>⁉</li>
+
+					<li>💯</li>
+
+					<li>🔅</li>
+
+					<li>🔆</li>
+
+					<li>🔱</li>
+
+					<li>⚜</li>
+
+					<li>〽</li>
+
+					<li>☢</li>
+
+					<li>☣</li>
+
+					<li>⚠</li>
+
+					<li>🚸</li>
+
+					<li>🔰</li>
+
+					<li>♻</li>
+
+					<li>🈯</li>
+
+					<li>💹</li>
+
+					<li>❇</li>
+
+					<li>✳</li>
+
+					<li>❎</li>
+
+					<li>✅</li>
+
+					<li>💠</li>
+
+					<li>🌐</li>
+
+					<li style="font-family:Twemoji Mozilla;">Ⓜ</li>
+
+					<li>🈂</li>
+
+					<li>➿</li>
+
+					<li>🛂</li>
+
+					<li>🛃</li>
+
+					<li>🛄</li>
+
+					<li>🛅</li>
+
+					<li>♿</li>
+
+					<li>🚾</li>
+
+					<li>🅿</li>
+
+					<li>🚰</li>
+
+					<li>🚹</li>
+
+					<li>🚺</li>
+
+					<li>🚻</li>
+
+					<li>🚮</li>
+
+					<li>📶</li>
+
+					<li>🈁</li>
+
+					<li>🆖</li>
+
+					<li>🆗</li>
+
+					<li>🆙</li>
+
+					<li>🆒</li>
+
+					<li>🆕</li>
+
+					<li>🆓</li>
+
+					<li style="font-family: Twemoji Mozilla;">▶</li>
+
+					<li>⏸</li>
+
+					<li>⏯</li>
+
+					<li>⏹</li>
+
+					<li>⏺</li>
+
+					<li>⏭</li>
+
+					<li>⏮</li>
+
+					<li>⏩</li>
+
+				
+				</ol>
+
+		</div>
+		<div class="container-preview">
+			<div class="character-grid-zoom-container">
+				<div class="character-grid-zoom">⃝</div>
+			</div>
+		</div>
+	</div>
+		</div>
+		<div class="container">
+			<div class="language pb-3u pt-1u stix-two-text">
+		<div>
+			<h3 id="coverage">Acknowledgements</h3>
+			<p>Emoji Browser uses Twemoji, a colour emoji font developed and maintained by Twitter. Check out their repo <a href="https://github.com/twitter/twemoji" target="blank">here</a>! <br>The website is based on a template by <a href="https://www.studioboulton.com/">Studio Boulton</a>, which itself was built using <a href="https://github.com/kabisa/specimen-skeleton">Specimen Skeleton</a> by <a href="https://kabisa.nl/">Kubisa</a>.<br><a href="https://github.com/markboulton/specimen-builder">Browse the repository on GitHub</a></p>
+		</div>
+	</div>
+
+		</div>
+
+		</div>
+	</main>
+		<script>
+			document.querySelector(".dark-mode-toggle").addEventListener("click", () => {
+				const isDarkMode = localStorage.getItem("dark-mode") === "true";
+				document.documentElement.setAttribute("data-dark-mode", !isDarkMode);
+				localStorage.setItem("dark-mode", !isDarkMode);
+			});
+		</script>
+	</body>
+</html>
