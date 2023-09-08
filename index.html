@@ -8,8 +8,8 @@
 		<title>Emoji Browser</title>
 		<!--PWA-->
 		<link rel="icon" type="image/svg+xml" href="images/icon.svg">
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#eee">
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2b422b">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icon.png">
+        <meta name="theme-color" content="#2b422b">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <!--Stylesheets-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 		<link href="styles.css" rel="stylesheet">
 		<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 		<!--Javascript-->
-		<script src="script.js"></script>
+		<script defer="" src="script.js"></script>
 		<script>
 			document.documentElement.setAttribute("data-dark-mode", localStorage.getItem("dark-mode"));
 		</script>
@@ -40,16 +40,16 @@
 			<button aria-labelledby="toggle-label" type="button" class="dark-mode-toggle">
 				<span hidden="true" id="toggle-label">toggle dark and light mode</span>
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-					<circle fill="var(--light)" cx="12" cy="12" r="5">
+					<circle fill="var(--light)" cx="12" cy="12" r="5"/>
 					<g stroke="currentColor">
-						<line x1="12" y1="1" x2="12" y2="3">
-						<line x1="12" y1="21" x2="12" y2="23">
-						<line x1="4.22" y1="4.22" x2="5.64" y2="5.64">
-						<line x1="18.36" y1="18.36" x2="19.78" y2="19.78">
-						<line x1="1" y1="12" x2="3" y2="12">
-						<line x1="21" y1="12" x2="23" y2="12">
-						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36">
-						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22">
+						<line x1="12" y1="1" x2="12" y2="3"/>
+						<line x1="12" y1="21" x2="12" y2="23"/>
+						<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+						<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+						<line x1="1" y1="12" x2="3" y2="12"/>
+						<line x1="21" y1="12" x2="23" y2="12"/>
+						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
 					</g>
 				</svg>
 			</button>
@@ -1811,7 +1811,7 @@
 			<div class="language pb-3u pt-1u stix-two-text">
 		<div>
 			<h3 id="coverage">Acknowledgements</h3>
-			<p>Emoji Browser uses Twemoji, a colour emoji font developed and maintained by Twitter. Check out their repo <a href="https://github.com/twitter/twemoji" target="blank">here</a>! <br>The website is based on a template by <a href="https://www.studioboulton.com/">Studio Boulton</a>, which itself was built using <a href="https://github.com/kabisa/specimen-skeleton">Specimen Skeleton</a> by <a href="https://kabisa.nl/">Kubisa</a>.<br><a href="https://github.com/markboulton/specimen-builder">Browse the repository on GitHub</a></p>
+			<p>Emoji Browser uses Twemoji, a colour emoji font developed and maintained by Twitter. Check out their repo <a href="https://github.com/twitter/twemoji" target="blank">here</a>! <br>The website is based on a template by <a href="https://www.studioboulton.com/">Studio Boulton</a>, which itself was built using <a href="https://github.com/kabisa/specimen-skeleton">Specimen Skeleton</a> by <a href="https://kabisa.nl/">Kubisa</a>.</p>
 		</div>
 	</div>
 
