@@ -3,11 +3,13 @@ var CACHE = "cache-v1";
 var urls = [
   "/",
   "images/banner.png",
-  "icon-256x256.png",
-  "icon.svg",
+  "images/icon-256x256.png",
+  "images/icon.svg",
   "manifest.webmanifest",
   "script.js",
-  "styles.css"
+  "styles.css",
+  "https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap",
+  "https://rsms.me/inter/inter.css"
 ];
 
 self.addEventListener("install", function (event) {
