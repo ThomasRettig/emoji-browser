@@ -8,9 +8,10 @@
 		<title>Emoji Browser</title>
 		<!--PWA-->
 		<link rel="icon" type="image/svg+xml" href="images/icon.svg">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" sizes="256x256" href="images/icon-256x256.png">
         <meta name="theme-color" content="#2b422b">
-        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="manifest" href="manifest.webmanifest">
         <!--Stylesheets-->
         <link href="styles.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,11 +29,13 @@
         <meta name="twitter:creator" content="@thomasrettig13">
         <meta name="twitter:title" content="Emoji Browser">
         <meta name="twitter:description" content="Emoji Browser is a minimalistic emoji browser created by Thomas Rettig.">
+        <meta name="twitter:image" content="https://emojizz.netlify.app/images/banner.png">
         <!--OpenGraph-->
         <meta property="og:title" content="Emoji Browser">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Emoji Browser">
         <meta property="og:description" content="Emoji Browser is a minimalistic emoji browser created by Thomas Rettig.">
+        <meta property="og:image" content="https://emojizz.netlify.app/images/banner.png">
 	</head>
 	<body>
 	<main>
@@ -1825,6 +1828,10 @@
 				document.documentElement.setAttribute("data-dark-mode", !isDarkMode);
 				localStorage.setItem("dark-mode", !isDarkMode);
 			});
+
+			if (navigator && navigator.serviceWorker) {
+        		navigator.serviceWorker.register("sw.js");
+      		}
 		</script>
 	</body>
 </html>
