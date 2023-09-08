@@ -4,7 +4,7 @@
 	"scope": "/",
 	"start_url": "/",
 	"name": "Emoji Browser",
-	"description": "Browse emoji through a beautiful, minimalist UI",
+	"description": "Browse through emoji with a beautifully crafted UI",
 	"short_name": "Emoji Browser",
 	"categories": "utilities",
 	"icons": [
