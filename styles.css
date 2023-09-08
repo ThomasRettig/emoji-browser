@@ -27,19 +27,6 @@ nav {
 	padding-top: 10px;
 }
 
-
-/* 
-charactergrid.css
-
-These styles define the character grid container css
-*/
-
-:root {
-	--character-grid-cell: 4rem;
-	--character-grid-font-zize: 2rem;
-	--character-grid-gap: 0;
-}
-
 ol {
 	margin: 0;
 	padding: 0;
@@ -121,13 +108,6 @@ p {}
 	color: var(--background);
 }
 
-
-/* 
-generic.css
-
-Do not edit.
-*/
-
 *,
 *::before,
 *::after {
@@ -144,6 +124,10 @@ ol,
 ul {
 	list-style-type: none;
 	padding: 0;
+}
+
+p {
+	text-wrap: balance;
 }
 
 .interactive-controls {
@@ -204,16 +188,19 @@ main {
 	--grey-dark: #666;
 	--text: var(--dark);
 	--background: var(--light);
-	--font-system: "Inter var", "Noto Color Emoji", sans-serif, Twitter Color Emoji, TwemojiMozilla, Segoe UI Emoji;
+	--font-system: "Inter var", "Noto Color Emoji", Twitter Color Emoji, TwemojiMozilla, Segoe UI Emoji;
 	--specimen-fallback-font: var(--font-system);
+	--character-grid-cell: 4rem;
+	--character-grid-font-zize: 2rem;
+	--character-grid-gap: 0;
 }
-
 
 /* For dark mode */
 
 html[data-dark-mode="true"] {
 	--text: var(--light);
 	--background: var(--dark);
+	--grey-mid: #c3cdc3;
 }
 
 body {
@@ -632,22 +619,15 @@ select:focus-visible {
 }
 
 
-/* END CONTAINER: Setting */
-
-
 /* CONTAINER: Character grid */
 
 .character-grid h3 {
 	font-family: var(--font-system);
-	font-size: 0.7rem;
+	font-size: 1rem;
 	color: var(--grey-mid);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-
-
-/* END CONTAINER: Character grid */
-
 
 /* CONTAINER: Language */
 
@@ -657,10 +637,6 @@ select:focus-visible {
 	line-height: 1.3;
 }
 
-
-/* END CONTAINER: Language */
-
-
 /* CONTAINER: Footer */
 
 .footer {
@@ -668,6 +644,3 @@ select:focus-visible {
 	font-family: var(--font-system);
 	line-height: 1.3;
 }
-
-
-/* END CONTAINER: Footer */
