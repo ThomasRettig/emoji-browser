@@ -15,7 +15,6 @@
 	background: ##7d7d7d;
 }
 
-
 /*selection*/
 
  ::selection {
@@ -31,8 +30,6 @@ ol {
 	margin: 0;
 	padding: 0;
 }
-
-p {}
 
 .container-glyphs {
 	display: grid;
@@ -56,7 +53,6 @@ p {}
 
 .character-grid-zoom-container {
 	pointer-events: none;
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	background: var(--background);
@@ -177,7 +173,6 @@ main {
 	display: block;
 }
 
-
 /* --------- Global styles --------- */
 
 :root {
@@ -188,7 +183,7 @@ main {
 	--grey-dark: #666;
 	--text: var(--dark);
 	--background: var(--light);
-	--font-system: "Inter var", "Noto Color Emoji", Twitter Color Emoji, TwemojiMozilla, Segoe UI Emoji;
+	--font-system: -apple-system, BlinkMacSystemFont, "Inter var", "Noto Color Emoji", Twitter Color Emoji, TwemojiMozilla, Segoe UI Emoji;
 	--specimen-fallback-font: var(--font-system);
 	--character-grid-cell: 4rem;
 	--character-grid-font-zize: 2rem;
@@ -207,9 +202,6 @@ body {
 	font-family: var(--font-system);
 	color: var(--text);
 	background-color: var(--background);
-	transition-duration: 200ms;
-	/* This transition makes the change between light and dark mode smoother */
-	transition-timing-function: ease;
 }
 
 main {
