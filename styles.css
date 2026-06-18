@@ -1,6 +1,6 @@
 /* --------- Custom Scrollbar Styles --------- */
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 9px;
 	height: auto;
 }
 
@@ -603,4 +603,45 @@ html[data-dark-mode="true"] {
     align-items: center;
     border-radius: 10px;
     -webkit-tap-highlight-color: transparent; /* Remove ugly tap highlight */
+}
+
+/* --------- Advanced Search Interface Styles --------- */
+.search-container {
+	margin: 1.5rem 0;
+	width: 100%;
+}
+
+#emoji-search {
+	width: 100%;
+	padding: 0.85rem 1.2rem;
+	font-family: var(--font-system);
+	font-size: 1rem;
+	background-color: var(--background);
+	color: var(--text);
+	border: 2px solid var(--grey-mid);
+	border-radius: 10px;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#emoji-search:focus {
+	border-color: var(--text);
+	box-shadow: 0 0 0 3px rgba(66, 135, 66, 0.2);
+}
+
+/* Clear search "X" styles native cleanup */
+#emoji-search::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 12px;
+	width: 12px;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>");
+	cursor: pointer;
+}
+
+/* Ensure focus highlighting triggers nicely for Keyboard Grid traversal */
+.character-grid-list > li:focus {
+	outline: 3px solid var(--text);
+	outline-offset: -2px;
+	background-color: var(--grey-light);
 }
